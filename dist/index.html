@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Late Night Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <form id="search-form">
+    <input id="search-box" class="controls" type="text" value="Coffee" placeholder="Keyword">
+    <button id="search-btn" type="submit">Find</button>
+    <label id="message"></label>
+    <button id="locate-btn"></button>
+  </form>
+  <div id="map"></div>
+
+  <script src="js/map-styles.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBruNstIs9UwbPaZJ_wTucq5kcvhpefY2M&libraries=places&callback=initMap"
+  async defer></script>
+</body>
+</html>

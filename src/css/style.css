@@ -1,0 +1,76 @@
+#map {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+}
+
+#search-form {
+  z-index: 20;
+  position: absolute;
+  background-color: rgba(207, 216, 220, 0.5);
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+#search-form #search-box {
+  display: none;
+  width: 130px;
+  color: #fafafa;
+  font-size: 18px;
+  border: 0;
+  background: none;
+  box-shadow:none;
+  border-radius: 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+#search-form #search-box:focus, button:focus {
+  outline-offset: 0;
+  outline-color: #fafafa;
+}
+
+#search-form button {
+  font-size: 18px;
+  border: 0;
+  box-shadow:none;
+  border-radius: 0;
+  margin-left: 5px;
+}
+
+#search-form #search-btn {
+  width: 60px;
+  padding: 5px 10px;
+  display: none;
+  color: #e0e0e0;
+  background-color: #424242;
+}
+
+#search-form #locate-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background: url("../assets/locate.png") no-repeat;
+  background-size: contain;
+  vertical-align: bottom;
+}
+
+#search-form #message {
+  display: none;
+  padding: 5px 10px;
+  color: #fafafa;
+}
+
+.info-window {
+  padding: 20px;
+}
+
+.info-window  .info-content {
+  font-size: 16px;
+}
