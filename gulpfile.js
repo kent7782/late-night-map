@@ -28,6 +28,12 @@ gulp.task('minify-js', function() {
         }))
 });
 
+// Copy HTML
+gulp.task('copy-html', function() {
+  gulp.src('src/index.html')
+    .pipe(gulp.dest('dist'));
+});
+
 // Copy all static assets
 gulp.task('copy', function() {
   gulp.src('src/assets/**')
@@ -35,7 +41,7 @@ gulp.task('copy', function() {
 });
 
 // Run everything
-gulp.task('default', ['minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['minify-css', 'minify-js', 'copy-html', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
